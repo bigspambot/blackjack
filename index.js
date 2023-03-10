@@ -25,7 +25,7 @@ let dealerSumEl = document.querySelector("#dealerSum-el")
 function displayPlayer() {
     cardsEl.textContent = "Your hand: " + cards.join(' - ')
     sumEl.textContent = "Your score: " + sum
-    playerEl.textContent = player.name + ": $" + player.chips
+    playerEl.textContent = player.name + ": £" + player.chips
 }
 
 function displayDealer() {
@@ -82,7 +82,7 @@ function newGame() {
         displayGame()
         
     } else if (roundIsActive && isAlive && !hasBlackjack) {
-        alert("STICK or TWIST?")
+        alert("Twist or Stick?")
     } else {
         alert("GAME OVER!")
     }
@@ -95,7 +95,7 @@ function displayGame() {
     
     // generate message
     if (sum < 21 && roundIsActive) {
-        message = "STICK or TWIST?"
+        message = "Twist or Stick?"
     } else if (sum === 21) {
         message = "You've got Blackjack! +25"
         hasBlackjack = true
@@ -119,7 +119,7 @@ function twist() {
         checkWinner()
         displayGame()
     } else {
-        alert("Click NEW GAME/ROUND")
+        alert("Deal")
     }
 }
 
@@ -138,7 +138,7 @@ function getRandomCard() {
 
 function stick() {
     if (!roundIsActive) {
-        alert("Click NEW GAME/ROUND")
+        alert("Deal")
     // if you have more than or equal to 16 and are not bust and don't have blackjack, you can stick
     } else if (sum >= 17 && isAlive && !hasBlackjack) {
         roundIsActive = false
@@ -149,7 +149,7 @@ function stick() {
             messageEl.textContent = "You win! +20"
             player.chips += 20
         } else if (isWinner === "push") {
-            messageEl.textContent = "Push. +10"
+            messageEl.textContent = "Push +10"
             player.chips += 10
         } else if (isWinner === false) {
             messageEl.textContent = "Dealer wins!"

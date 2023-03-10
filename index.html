@@ -11,19 +11,20 @@
     <div class="container">
         <h1>Blackjack</h1>
         <div class="line"></div>
-        <p id="message-el">Click NEW GAME/ROUND to play!</p>
+        <p id="message-el">DEAL to play!</p>
+        <div class="line"></div>
+        <p id="player-el"></p>   
         <div class="line"></div>
         <p id="cards-el">Your hand:</p>
         <p id="sum-el">Your score:</p>
         <div class="line"></div>
         <p id="dealerCards-el">Dealer's hand:</p>
         <p id="dealerSum-el">Dealer's score:</p>
-        <div class="buttons-div">
-            <button id="btn-start" onclick="newGame()">NEW GAME/ROUND</button>
-            <button id="btn-twist" onclick="twist()">TWIST</button>
-            <button id="btn-stick" onclick="stick()">STICK</button>
-        </div>
-        <p id="player-el"></p>   
+        
+        <button id="btn-start" onclick="newGame()">Deal</button>
+        <button id="btn-twist" onclick="twist()">Twist</button>
+        <button id="btn-stick" onclick="stick()">Stick</button>
+          
     </div>
 
     <script src="index.js"></script>
