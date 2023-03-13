@@ -61,7 +61,7 @@ function newGame() {
         player.chips -= 10
         displayGame()
     // if you already have chips, deal a new round
-    } else if (player.chips > 0 && !roundIsActive) {
+    } else if (player.chips >= 10 && !roundIsActive) {
 
         isAlive = true
         roundIsActive = true

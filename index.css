@@ -7,17 +7,17 @@
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #003e1f;
+    background-color: #2F6F32;
 }
 
 h1 {
-    color: #01110a;
+    color: #e5b423;
     font-size: 40px;
-    text-shadow: 0.5px 0.5px 0.5px #d5f2e3;
+    text-shadow: 1px 1px 1px #55291c;
 }
 
 .line {
-    border-bottom: #d5f2e3 1px solid;
+    border-bottom: #e5b423 2px solid;
     width: 200px;
 }
 
@@ -26,23 +26,24 @@ h1 {
     /* color: #f2e8cf; */
     font-size: 20px;
     padding: 5px;
-    text-shadow: 1px 1px 1px black;
+    /* text-shadow: 1px 1px 1px #010101; */
 }
 
 p {
-    color: #d5f2e3;
+    color: #010101;
     font-size: 15px;
     padding: 0;
-    text-shadow: 1px 1px 1px black;
+    /* text-shadow: 1px 1px 1px #F6F6F7; */
 }
 
 button {
     padding: 10px 10px;
     border-radius: 5px;
     font-size: 20px;
-    background-color: #ba2d0b;
-    border: 1px solid black;
-    text-shadow: 1px 1px 1px grey;
+    background-color: #CC0000;
+    color: #010101;
+    border: none;
+    /* text-shadow: 1px 1px 1px #010101; */
     width: 200px;
     margin: 10px;
 }
