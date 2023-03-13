@@ -47,7 +47,7 @@ function newGame() {
 
         hasBlackjack = false
 
-        player.chips = 150
+        player.chips = 50
         // get your cards and the dealer's first
         let firstCard = getRandomCard()
         let secondCard = getRandomCard()
