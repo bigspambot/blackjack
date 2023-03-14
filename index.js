@@ -29,7 +29,7 @@ function displayPlayer() {
 }
 
 function displayDealer() {
-    dealerCardsEl.textContent = "Dealer's hand: " + dealerCards
+    dealerCardsEl.textContent = "Dealer's hand: " + dealerCards.join(' - ')
     dealerSumEl.textContent = "Dealer's score: " + dealerSum
 }
 

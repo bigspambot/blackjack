@@ -17,7 +17,7 @@ h1 {
 }
 
 .line {
-    border-bottom: #e5b423 2px solid;
+    border-bottom: #d5f2e3 2px solid;
     width: 200px;
 }
 
@@ -42,7 +42,7 @@ button {
     font-size: 20px;
     background-color: #CC0000;
     color: #010101;
-    border: none;
+    border: 1px solid #010101;
     /* text-shadow: 1px 1px 1px #010101; */
     width: 200px;
     margin: 10px;
